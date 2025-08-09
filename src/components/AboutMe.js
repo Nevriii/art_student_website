@@ -5,7 +5,7 @@ import commsImage from '../assets/photos/comms.png';
 
 const AboutMe = () => {
   return (
-    <div className="aboutme-container">
+    <div className="aboutme-container" id='about_me'>
       <div className="aboutme-grid">
         {/* Left Column - Rotated "About Me" text and info1.png */}
         <div className="aboutme-left-column">

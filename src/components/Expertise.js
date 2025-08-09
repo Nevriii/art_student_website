@@ -9,7 +9,7 @@ import paperImage from '../assets/photos/paper.png';
 
 const Expertise = () => {
   return (
-    <section className="section3 color1">
+    <section className="section3 color1" id='expertise'>
       <div className="container">
         <div className="container-fluid">
           <div className="row">
@@ -46,8 +46,8 @@ const Expertise = () => {
                 data-aos-duration="2000"
               />
             </div>
-            <div className="col-lg-3" style={{ marginTop: '15%' }}>
-              <h1 id="c" className="fontcolor2 font-weight-bolder font1 expertiseloc" data-aos="zoom-out-left" data-aos-duration="2000">
+            <div className="col-lg-3" style={{ marginTop: '15%', fontWeight: '10px' }}>
+              <h1 className="fontcolor2 font-weight-bolder font1 expertiseloc" data-aos="zoom-out-left" data-aos-duration="2000">
                 EXPERTISE
               </h1>
               <h1>&nbsp;</h1>

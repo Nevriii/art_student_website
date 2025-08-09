@@ -4,7 +4,7 @@ import leafImage from '../assets/photos/leaf.png';
 
 const Introduction = () => {
   return (
-    <div className="introduction-container">
+    <div className="introduction-container" id='home'>
       <div className="introduction-grid">
         {/* Left Column - Text Content */}
         <div className="introduction-text">

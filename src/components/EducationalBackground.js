@@ -33,7 +33,7 @@ const EducationalBackground = () => {
     ];
 
     return (
-        <section className="section2 bg-light" style={{ marginTop: '-270px' }}>
+        <section className="section2 bg-light" style={{ marginTop: '-270px' }} id='education'>
         <div className="container-fluid">
             <div className="container">
                 <h1>&nbsp;</h1>
