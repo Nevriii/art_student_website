@@ -324,16 +324,16 @@ body {
   }
 
   .introduction-image {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     padding-top: 200px;
   }
 
   .introduction-leaf {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
-    /* padding-bottom: 100px; */
-    padding-top: 230px;
+    padding-bottom: 230px;
+    /* padding-top: 230px; */
   }
 }
 
@@ -401,6 +401,210 @@ body {
   right: 0;
 }
 
+@media (max-width: 1199px) {
+  .aboutme-container {
+    min-height: 100vh;
+    background-color: #fff7ee;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    margin-top: -300px;
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+  }
+  
+  .aboutme-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .aboutme-left-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .aboutme-title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(2rem, 2.5vw, 4rem);
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .aboutme-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 20rem;
+  }
+  
+  .aboutme-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .aboutme-info1 {
+    margin-top: 10rem;
+  }
+  
+  .aboutme-info2 {
+    margin-bottom: 3rem;
+  }
+  
+  .aboutme-comms {
+    position: absolute;
+    top: 13rem;
+    right: 0;
+  }
+}
+
+@media (max-width: 999px) {
+  .aboutme-container {
+    min-height: 100vh;
+    background-color: #fff7ee;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    margin-top: -200px;
+    position: relative;
+    z-index: 100;
+    background-color: transparent;
+  }
+  
+  .aboutme-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .aboutme-left-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .aboutme-title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(2rem, 2.5vw, 4rem);
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .aboutme-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 20rem;
+  }
+  
+  .aboutme-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .aboutme-image-comms {
+    max-width: 70%;
+    height: auto;
+  }
+  
+  .aboutme-info1 {
+    margin-top: 10rem;
+  }
+  
+  .aboutme-info2 {
+    margin-bottom: 3rem;
+  }
+  
+  .aboutme-comms {
+    position: absolute;
+    top: 13rem;
+    right: 0;
+  }
+}
+
+@media (max-width: 699px) {
+  .aboutme-container {
+    min-height: auto;
+    background-color: #fff7ee;
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin-top: -200px;
+    position: relative;
+    z-index: 100;
+    background-color: transparent;
+    flex-direction: column; /* Stack vertically */
+  }
+
+  .aboutme-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    gap: 1rem;
+  }
+
+  /* Center the title at the top */
+  .aboutme-title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    writing-mode: horizontal-tb; /* Disable sideways */
+    position: static; /* Remove absolute positioning */
+    color: #DDDDDD;
+  }
+
+  /* Two-column layout for info1 & info2 */
+  .aboutme-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .aboutme-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .aboutme-info1 {
+    margin-top: 0;
+  }
+
+  .aboutme-info2 {
+    margin-bottom: 0;
+  }
+
+  /* Center comms below */
+  .aboutme-comms {
+    position: static;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
 /* EducationalBackground Section Styles */
 .educational-container {
   margin-top: -600px;
@@ -455,6 +659,229 @@ body {
 
 }
 
+@media (max-width: 1199px) {
+  .educational-container {
+    margin-top: -600px;
+    position: relative;
+    z-index: 5;
+    padding: 4rem 0;
+  }
+  
+  .educational-title {
+    color: #9c4819;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 1rem;
+  }
+  
+  .educational-table {
+    width: 10%;
+    border-collapse: collapse;
+  }
+  
+  .educational-table td {
+    vertical-align: top;
+  }
+  
+  .educational-table td:first-child {
+    width: 100px;
+    font-weight: 600;
+    /* color: #9c4819; */
+  }
+  
+  .educational-school {
+    font-weight: 700;
+    color: #303f3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educational-course {
+    font-weight: 600;
+    color: #303f3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educational-level {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .educational-years {
+    position: relative;
+    top: 1rem;
+  
+  }
+}
+
+@media (max-width: 999px) {
+  .educational-container {
+    margin-top: -600px;
+    position: relative;
+    z-index: 5;
+    padding: 4rem 0;
+  }
+  
+  .educational-title {
+    color: #9c4819;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: -3rem;
+  }
+  
+  .educational-table {
+    width: 10%;
+    border-collapse: collapse;
+    margin-left: 8rem;
+  }
+  
+  .educational-table td {
+    vertical-align: top;
+  }
+  
+  .educational-table td:first-child {
+    width: 100px;
+    font-weight: 600;
+    /* color: #9c4819; */
+  }
+  
+  .educational-school {
+    font-weight: 700;
+    color: #303f3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educational-course {
+    font-weight: 600;
+    color: #303f3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educational-level {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .educational-years {
+    position: relative;
+    top: 1rem;
+  
+  }
+}
+
+@media (max-width: 899px) {
+  .educational-container {
+    margin-top: -600px;
+    position: relative;
+    z-index: 5;
+    padding: 4rem 0;
+  }
+  
+  .educational-title {
+    color: #9c4819;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: -3rem;
+  }
+  
+  .educational-table {
+    width: 10%;
+    border-collapse: collapse;
+    margin-left: 9rem;
+  }
+  
+  .educational-table td {
+    vertical-align: top;
+  }
+  
+  .educational-table td:first-child {
+    width: 100px;
+    font-weight: 600;
+    /* color: #9c4819; */
+  }
+  
+  .educational-school {
+    font-weight: 700;
+    color: #303f3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educational-course {
+    font-weight: 600;
+    color: #303f3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educational-level {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .educational-years {
+    position: relative;
+    top: 1rem;
+  
+  }
+}
+
+@media (max-width: 760px) {
+  .educational-container {
+    margin-top: -600px;
+    position: relative;
+    z-index: 5;
+    padding: 4rem 0;
+  }
+  
+  .educational-title {
+    color: #9c4819;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: -3rem;
+  }
+  
+  .educational-table {
+    width: 10%;
+    border-collapse: collapse;
+    margin-left: 6rem;
+  }
+  
+  .educational-table td {
+    vertical-align: top;
+  }
+  
+  .educational-table td:first-child {
+    width: 100px;
+    font-weight: 600;
+    /* color: #9c4819; */
+  }
+  
+  .educational-school {
+    font-weight: 700;
+    color: #303f3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educational-course {
+    font-weight: 600;
+    color: #303f3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educational-level {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .educational-years {
+    position: relative;
+    top: 1rem;
+  
+  }
+}
+
 /* Expertise CSS Style Design */
 .expertiseloc {
   font-weight: 1000;
@@ -463,41 +890,7 @@ body {
 
 
 /* Responsive design for AboutMe */
-@media only screen and (max-width: 1024px) {
-  .aboutme-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-  
-  .aboutme-left-column {
-    grid-column: 1 / -1;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-  }
-  
-  .aboutme-title {
-    transform: rotate(0deg);
-    writing-mode: horizontal-tb;
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .aboutme-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .aboutme-left-column {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .aboutme-title {
-    transform: rotate(0deg);
-    writing-mode: horizontal-tb;
-  }
-}
 
 /*  Link Design  */
 a{
