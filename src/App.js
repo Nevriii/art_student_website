@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Introduction from './components/Introduction';
 import AboutMe from './components/AboutMe';
 import EducationalBackground from './components/EducationalBackground';
-// import Expertise from './components/Expertise';
+import Expertise from './components/Expertise';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Introduction />
       <AboutMe />
       <EducationalBackground />
-      {/* <Expertise /> */}
+      <Expertise />
     </div>
   );
 }
