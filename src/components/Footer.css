@@ -1,0 +1,41 @@
+.footer-wrapper {
+    position: relative;
+    background-color: #e8f4f8; /* Light blue background for footer - different from page background */
+    box-sizing: border-box;
+  }
+  
+  .footer {
+    padding: 40px 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .color2 {
+    background-color: #e8f4f8; /* Light blue background for footer */
+  }
+  
+  .fontcolor2 {
+    color: #2c3e50; /* Dark blue text color for names */
+    margin-bottom: 5px;
+  }
+  
+  .fontcolor3 {
+    color: #34495e; /* Medium blue color for titles and emails */
+    margin-bottom: 5px;
+  }
+  
+  /* Bootstrap responsive adjustments */
+  @media (max-width: 991.98px) {
+    .col-lg-6 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* AOS animation support */
+  [data-aos] {
+    pointer-events: none;
+  }
+  
+  [data-aos].aos-animate {
+    pointer-events: auto;
+  }

@@ -47,7 +47,7 @@ const Expertise = () => {
               />
             </div>
             <div className="col-lg-3" style={{ marginTop: '15%' }}>
-              <h1 id="c" className="fontcolor2 font-weight-bolder font1" data-aos="zoom-out-left" data-aos-duration="2000">
+              <h1 id="c" className="fontcolor2 font-weight-bolder font1 expertiseloc" data-aos="zoom-out-left" data-aos-duration="2000">
                 EXPERTISE
               </h1>
               <h1>&nbsp;</h1>
