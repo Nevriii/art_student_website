@@ -584,8 +584,8 @@ body {
   
   .aboutme-title {
     font-family: 'Ibarra Real Nova', serif;
-    font-size: clamp(2rem, 2.5vw, 4rem);
-    font-weight: 700;
+    font-size: clamp(2rem, 4.5vw, 4rem)!important;
+    font-weight: 800;
     margin: 0;
   }
   
@@ -647,7 +647,7 @@ body {
   /* Center the title at the top */
   .aboutme-title {
     font-family: 'Ibarra Real Nova', serif;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2rem, 7vw, 3rem)!important;
     font-weight: 700;
     margin: 0;
     text-align: center;
@@ -1021,6 +1021,69 @@ body {
 .expertiseloc {
   font-weight: 1000;
   padding-left: 5%
+}
+
+/* Default: show desktop, hide mobile */
+.desktop-expertise-layout {
+  display: block;
+}
+.mobile-expertise-layout {
+  display: none;
+}
+
+/* At 1199px and below, desktop still shows */
+@media (max-width: 1199px) {
+  .desktop-expertise-layout {
+    display: block;
+  }
+}
+
+/* At 999px and below, desktop still shows */
+@media (max-width: 999px) {
+  .mobile-expertise-layout {
+    display: block!important;
+  }
+
+  .desktop-expertise-layout {
+    display: none!important;
+  }
+}
+
+/* At 899px and below, desktop still shows */
+@media (max-width: 899px) {
+  .mobile-expertise-layout {
+    display: block;
+  }
+}
+
+/* At 780px and below, hide desktop, show mobile */
+@media (max-width: 780px) {
+  .desktop-expertise-layout {
+    display: none;
+  }
+  .mobile-expertise-layout {
+    display: block;
+  }
+
+  .expertiseloc {
+    font-weight: 1000;
+    padding-left: 5%;
+    font-size: 300%!important;
+  }
+}
+
+/* At 599px and below, keep mobile visible */
+@media (max-width: 599px) {
+  .mobile-expertise-layout {
+    display: block;
+  }
+}
+
+/* At 499px and below, keep mobile visible */
+@media (max-width: 499px) {
+  .mobile-expertise-layout {
+    display: block;
+  }
 }
 
 
