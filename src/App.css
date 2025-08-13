@@ -337,6 +337,91 @@ body {
   }
 }
 
+@media (max-width: 499px) {
+  .introduction-container {
+    min-height: auto;
+    background-color: #fff7ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    position: relative;
+    margin-top: 7rem;
+  }
+
+  .introduction-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .introduction-text {
+    font-family: 'Ibarra Real Nova', serif;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.95rem;
+    padding: 0;
+    text-align: left;
+    word-break: break-word;
+  }
+
+  .introduction-hello {
+    color: #9c4819;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .introduction-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+  }
+  
+  .introduction-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #303f3c;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .introduction-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .introduction-image {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .introduction-leaf {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+  }
+}
+
 /* AboutMe Section Styles */
 .aboutme-container {
   min-height: 100vh;
@@ -543,7 +628,7 @@ body {
     display: flex;
     align-items: center;
     padding: 2rem 1rem;
-    margin-top: -200px;
+    margin-top: -30px;
     position: relative;
     z-index: 100;
     background-color: transparent;
@@ -606,12 +691,12 @@ body {
 
 
 /* EducationalBackground Section Styles */
-.educational-container {
-  margin-top: -600px;
+/* .educational-container {
+  margin-top: -100px;
   position: relative;
   z-index: 5;
   padding: 4rem 0;
-}
+} */
 
 .educational-title {
   color: #9c4819;
@@ -661,10 +746,7 @@ body {
 
 @media (max-width: 1199px) {
   .educational-container {
-    margin-top: -600px;
-    position: relative;
-    z-index: 5;
-    padding: 4rem 0;
+    margin-top: -270px;
   }
   
   .educational-title {
@@ -716,10 +798,7 @@ body {
 
 @media (max-width: 999px) {
   .educational-container {
-    margin-top: -600px;
-    position: relative;
-    z-index: 5;
-    padding: 4rem 0;
+    margin-top: -270px;
   }
   
   .educational-title {
@@ -772,10 +851,7 @@ body {
 
 @media (max-width: 899px) {
   .educational-container {
-    margin-top: -600px;
-    position: relative;
-    z-index: 5;
-    padding: 4rem 0;
+    margin-top: -270px;
   }
   
   .educational-title {
@@ -826,16 +902,14 @@ body {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 790px) {
   .educational-container {
-    margin-top: -600px;
-    position: relative;
-    z-index: 5;
-    padding: 4rem 0;
+    margin-top: -70px;
   }
   
   .educational-title {
     color: #9c4819;
+    font-size: 350%;
     font-weight: 700;
     text-align: center;
     position: relative;
@@ -843,22 +917,83 @@ body {
   }
   
   .educational-table {
-    width: 10%;
+    /* width: 100%; */
     border-collapse: collapse;
-    margin-left: 6rem;
+    margin-left: 11rem;
+    /* padding-left: 100%; */
   }
   
   .educational-table td {
     vertical-align: top;
+    font-size: 140%;
   }
   
   .educational-table td:first-child {
+    font-size: 120%;
     width: 100px;
     font-weight: 600;
     /* color: #9c4819; */
   }
   
   .educational-school {
+    font-size: 100%;
+    font-weight: 700;
+    color: #303f3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educational-course {
+    font-weight: 600;
+    color: #303f3c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .educational-level {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .educational-years {
+    position: relative;
+    top: 1rem;
+  
+  }
+}
+
+@media (max-width: 499px) {
+  .educational-container {
+    margin-top: -70px;
+  }
+  
+  .educational-title {
+    color: #9c4819;
+    font-size: 200%;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: -3rem;
+  }
+  
+  .educational-table {
+    /* width: 100%; */
+    border-collapse: collapse;
+    margin-left: 3rem;
+    /* padding-left: 100%; */
+  }
+  
+  .educational-table td {
+    vertical-align: top;
+    font-size: 140%;
+  }
+  
+  .educational-table td:first-child {
+    font-size: 100%;
+    width: 100px;
+    font-weight: 600;
+  }
+  
+  .educational-school {
+    font-size: 100%;
     font-weight: 700;
     color: #303f3c;
     margin-bottom: 0.5rem;

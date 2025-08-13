@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const EducationalBackground = () => {
     useEffect(() => {
@@ -6,6 +6,14 @@ const EducationalBackground = () => {
         if (window.AOS) {
         window.AOS.init();
         }
+    }, []);
+
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     const educationData = [
@@ -33,53 +41,56 @@ const EducationalBackground = () => {
     ];
 
     return (
-        <section className="section2 bg-light" style={{ marginTop: '-270px' }} id='education'>
-        <div className="container-fluid">
-            <div className="container">
-                <h1>&nbsp;</h1>
-                <div className="row" style={{ paddingTop: '10px' }}>
-                    <div className="col-lg-6">
-                    <h1 className="text-center">&nbsp;</h1>
-                    <h1 
-                        id="education" 
-                        className="text-center fontcolor1 font-weight-bolder educational-title"
-                        data-aos="zoom-out-left" 
-                        data-aos-duration="1000"
-                    >
-                        <div>EDUCATIONAL</div> 
-                        <div>BACKGROUND</div>
-                    </h1>
-                    </div>
-                    <div className="col-lg-6">
-                        <table 
-                            className="table-borderless w-100 educational-table"
-                            data-aos="zoom-out-right" 
+        <section className="section2 bg-light" style={{ marginTop: windowWidth <= 760 ? '-70px' : '-270px', width: '100%', overflow: 'hidden' }} id='education'>
+            <div className="container-fluid">
+                <div className="container" style={{ maxWidth: '100%', overflow: 'hidden' }}>
+                    <h1>&nbsp;</h1>
+                    <div className="row" style={{ paddingTop: '10px' }}>
+                        <div className="col-lg-5">
+                        <h1 className="text-center">&nbsp;</h1>
+                        <h1 
+                            id="education" 
+                            className="text-center fontcolor1 font-weight-bolder educational-title"
+                            data-aos="zoom-out-left" 
                             data-aos-duration="1000"
                         >
-                            <tbody>
-                                {educationData.map((edu, index) => (
-                                    <tr key={index}>
-                                        <td className="fontcolor4 educational-years">{edu.years}</td>
-                                        <td>
-                                            <h5 className="fontcolor4 font1 font-weight-bold mb-1 educational-school">
-                                            {edu.school}
-                                            </h5>
-                                            {edu.course && (
-                                            <h6 className="fontcolor4 font1 font-weight-bold mb-1">
-                                                {edu.course}
-                                            </h6>
-                                            )}
-                                            <i className="font1 fontcolor4">{edu.level}</i>
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                        <h1>&nbsp;</h1>
+                            <div>EDUCATIONAL</div> 
+                            <div>BACKGROUND</div>
+                        </h1>
+                        </div>
+                        <div className="col-lg-6" style={{ overflow: 'hidden' }}>
+                            <div style={{ marginLeft: '-20px', paddingRight: '20px' }}>
+                                <table 
+                                    className="table-borderless w-100 educational-table"
+                                    data-aos="zoom-out-right" 
+                                    data-aos-duration="1000"
+                                >
+                                    <tbody>
+                                        {educationData.map((edu, index) => (
+                                            <tr key={index}>
+                                                <td className="fontcolor4 educational-years">{edu.years}</td>
+                                                <td>
+                                                    <h5 className="fontcolor4 font1 font-weight-bold mb-1 educational-school">
+                                                    {edu.school}
+                                                    </h5>
+                                                    {edu.course && (
+                                                    <h6 className="fontcolor4 font1 font-weight-bold mb-1">
+                                                        {edu.course}
+                                                    </h6>
+                                                    )}
+                                                    <i className="font1 fontcolor4">{edu.level}</i>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h1>&nbsp;</h1>
+                        </div>
+                        <div className="col-lg-1"></div> {/* Add this to complete the 12-column grid */}
                     </div>
                 </div>
             </div>
-        </div>
         </section>
     );
 };
