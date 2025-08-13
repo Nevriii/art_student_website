@@ -51,7 +51,7 @@ const Introduction = () => {
           <p className="introduction-name" style={styles.name}>I'm Rainn</p>
           <p className="introduction-name" style={styles.hello}>Abrogena!</p>
           <p className="introduction-description" style={styles.description}>
-            A multimedia arts student at Mapua University. She is an aspiring digital illustrator committed to her creative crafts.
+            A multimedia arts student at Mapua University. A digital illustrator committed to her creative crafts.
           </p>
         </div>
         
